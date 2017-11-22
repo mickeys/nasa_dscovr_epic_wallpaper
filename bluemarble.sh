@@ -26,6 +26,14 @@ curl_args='-L '								# follow redirects to destination
 curl_args+='-#O'							# derive fn from source URL
 
 # -----------------------------------------------------------------------------
+# Check that the website is up and running, or quit.
+# -----------------------------------------------------------------------------
+if [[ $( curl -IsLk "$jurl" | head -1 | cut -f2 -d ' ') -ne '200' ]] ; then
+	echo "fatal error: site "$jurl" is down; quitting."
+	exit
+fi
+
+# -----------------------------------------------------------------------------
 # Get the JSON from $jurl, placing into $outd each image described.
 # -----------------------------------------------------------------------------
 mkdir -p "$outd"							# make destination directory
