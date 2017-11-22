@@ -16,7 +16,7 @@ NASA stores the images for public and research consumption, but provides no stat
 
 `bluemarble.sh` fetches the latest batch of natural<sup>1</sup> images into `./pix`. I do no post-processing, no soft-linking `latest` for [GeekTool](https://www.tynsoe.org/v2/geektool/) to use, no generation of animated GIFs -- at the moment nothing at all. That may change.
 
-<sup>1</sup> As of today the `enhanced` images aren't found on the EPIC website. When restored I'll update `bluemarble.sh` to handle both kinds of images.
+<sup>1</sup> As of today (2017-11-21) the `enhanced` images aren't back on the EPIC website. I've aded the framework to `bluemarble.sh` to handle both 'natural' and 'enhanced' images.
 
 <br clear="right">
 
@@ -25,11 +25,4 @@ NASA stores the images for public and research consumption, but provides no stat
 Then I use [ImageMagick](https://www.imagemagick.org) to:
 
 * trim the overly-large black borders
-* create an animated image of the recently-fetched images
-
-
-## Stil to be done
-
-add error-handling for 
-
-* images being present
+* create an animated, morphing, image of the recently-fetched images
