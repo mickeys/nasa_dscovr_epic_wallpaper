@@ -11,6 +11,7 @@ There are a good number of satellites providing weather images of parts of the e
 ## JSON API
 
 <img src="./images/DSCOVR-Logo_NOAA_NASA_USAF.png" align="right" width="40%">
+
 NASA stores the images for public and research consumption, but provides no static links. One must spelunk into the published [API to the DISCOVR EPIC images](https://epic.gsfc.nasa.gov/about/api)
 
 `bluemarble.sh` fetches the latest batch of natural<sup>1</sup> images into `./pix`. I do no post-processing, no soft-linking `latest` for [GeekTool](https://www.tynsoe.org/v2/geektool/) to use, no generation of animated GIFs -- at the moment nothing at all. That may change.
