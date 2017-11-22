@@ -36,5 +36,29 @@ done < <(jq --raw-output '. | .[] | .image' <<<$( curl "$jurl" ))	# until done
 popd										# pop back to previous directory
 
 # -----------------------------------------------------------------------------
+# Further transformations require ImageMagick be installed. So we test...
+# -----------------------------------------------------------------------------
+if [[ $( convert -version | grep -c ImageMagick ) -gt 0 ]] ; then
+	has_imagemagick=1 ; else has_imagemagick=0 ; fi
+set -x
+# -----------------------------------------------------------------------------
+# Trim unnecessary huge black borders.
+# -----------------------------------------------------------------------------
+if [[ $has_imagemagick -eq 1 ]] ; then		# following requires ImageMagick
+	mkdir -p "${outd}-trimmed"				# make output dir for trimmed pix
+	for f in $outd/*.$extn ; do				# for each of the fetched images
+		echo $f
+		convert "$f" -trim "$f"				# trim away the borders
+	done
+fi
+
+# -----------------------------------------------------------------------------
+# Create an animated image.
+# -----------------------------------------------------------------------------
+if [[ $has_imagemagick -eq 1 ]] ; then		# following requires ImageMagick
+	convert -loop 0 -delay 100 "${outd}/*.$extn" dscvr_epic.gif
+fi
+
+# -----------------------------------------------------------------------------
 # That's all, folks!
 # -----------------------------------------------------------------------------

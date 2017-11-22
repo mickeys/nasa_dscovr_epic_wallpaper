@@ -20,6 +20,14 @@ NASA stores the images for public and research consumption, but provides no stat
 
 <br clear="right">
 
+## ImageMagick
+
+Then I use [ImageMagick](https://www.imagemagick.org) to:
+
+* trim the overly-large black borders
+* create an animated image of the recently-fetched images
+
+
 ## Stil to be done
 
 add error-handling for 
