@@ -32,5 +32,4 @@ Then I use [ImageMagick](https://www.imagemagick.org) to:
 
 add error-handling for 
 
-* the website being up
 * images being present
