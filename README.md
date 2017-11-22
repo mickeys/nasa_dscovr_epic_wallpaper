@@ -11,11 +11,11 @@ There are a good number of satellites providing weather images of parts of the e
 ## JSON API
 
 <img src="./images/DSCOVR-Logo_NOAA_NASA_USAF.png" align="right" width="40%">
-NASA stores the images for public and research consumption, but provides no static links to the latest and greatest images; nothing like `http://epic.nasa.gov/latest.jpg` was deemed worthwhile for the ease-of-use of sharing. So one must spelunk into the published [API to the DISCOVR EPIC images](https://epic.gsfc.nasa.gov/about/api) to get at the things.
+NASA stores the images for public and research consumption, but provides no static links to the latest and greatest images; nothing like `http://epic.nasa.gov/latest.jpg` was deemed worthwhile for the ease-of-use of sharing. So one must spelunk into the published [API to the DISCOVR EPIC images](https://epic.gsfc.nasa.gov/about/api)
 
-`wp.sh` fetches the latest batch of natural<sup>1</sup> images into `./pix`. I do no post-processing, no soft-linking `latest` for [GeekTool](https://www.tynsoe.org/v2/geektool/) to use, no generation of animated GIFs -- at the moment nothing at all. That may change.
+`bluemarble.sh` fetches the latest batch of natural<sup>1</sup> images into `./pix`. I do no post-processing, no soft-linking `latest` for [GeekTool](https://www.tynsoe.org/v2/geektool/) to use, no generation of animated GIFs -- at the moment nothing at all. That may change.
 
-1. As of today the `enhanced` images aren't found on the EPIC website. When restored I'll update `wp.sh` to handle both kinds of images.
+1. As of today the `enhanced` images aren't found on the EPIC website. When restored I'll update `bluemarble.sh` to handle both kinds of images.
 
 <br clear="right">
 
