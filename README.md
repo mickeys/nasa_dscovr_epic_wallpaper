@@ -1,13 +1,10 @@
 # NASA DSCOVR EPIC near real-time satellite wallpaper
 
 <img src="./images/dscvr_epic.gif" align="right" width="40%" border="5">
-Static wallpapers for my digital devices has always vexed me. I've streamed webcams to my desktop and, a while ago, wondered whether I could find the ultime in webcam viewpoints: near-real-time satellite images of earth, those [blue marble](https://en.wikipedia.org/wiki/The_Blue_Marble) images, the opposite of the [pale blue dot](https://en.wikipedia.org/wiki/Pale_Blue_Dot).
 
 [I'm an inline-style link](https://www.google.com)
 
-[blue marble](https://en.wikipedia.org/wiki/The_Blue_Marble)
-
-[pale blue dot](https://en.wikipedia.org/wiki/Pale_Blue_Dot)
+Static wallpapers for my digital devices has always vexed me. I've streamed webcams to my desktop and, a while ago, wondered whether I could find the ultime in webcam viewpoints: near-real-time satellite images of earth, those [blue marble](https://en.wikipedia.org/wiki/The_Blue_Marble) -- the opposite of the [pale blue dot](https://en.wikipedia.org/wiki/Pale_Blue_Dot) image.
 
 There are a good number of satellites providing weather images of parts of the earth (for example, the USA is covered in two images) but it wasn't until I came across NASA's [Deep Space Climate Observatory](https://en.wikipedia.org/wiki/Deep_Space_Climate_Observatory) DSCOVR satellite did I find the entire planet captured in one image. Located at the Earth-Sun Lagrange point, DSCOVR's Earth Polychromatic Imaging Camera (EPIC) generates exactly what I wanted.
 
